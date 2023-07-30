@@ -26,14 +26,19 @@ input:invalid {
 }
 
 
-#submit {
-  margin: 1rem;
+button {
+  margin: 0.5rem;
 }
 
 fieldset {
   border-radius: 15px;
+  margin-bottom: 2rem;
 }
 
 legend {
   font-weight: bold;
+}
+
+#studyName, #companyPositionDetails {
+  width: 60%;
 }

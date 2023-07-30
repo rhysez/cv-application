@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 export default function General() {
+
     return (
         <div>
             <fieldset>
@@ -15,6 +16,8 @@ export default function General() {
                     <label htmlFor="contactNumber">Contact number</label>
                     <input type="number" id='contactNumber' name='contactNumber' />
                 </form>
+
+                <button id='editGeneral'>Edit</button>
                 <button type="submit" id='submit'>Done</button>
             </fieldset>
         </div>
