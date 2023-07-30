@@ -40,6 +40,7 @@ export default function Practical() {
           <input type="date" id="companyEndDate" name="companyEndDate" />
         </form>
 
+        <button id="addPractical">Add</button>
         <button id="editGeneral">Edit</button>
         <button type="submit" id="submit">
           Done

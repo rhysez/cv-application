@@ -4,6 +4,11 @@
   text-align: center;
 }
 
+.pageContainer {
+  display: flex;
+  flex-direction: row;
+}
+
 .cvContainer {
   display: flex;
   flex-direction: column;

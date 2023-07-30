@@ -11,10 +11,16 @@ function App() {
     <>
       <h1>CV Builder</h1>
 
-      <div className="cvContainer">
-        <General />
-        <Education />
-        <Practical />
+      <div className='pageContainer'>
+        <div className="cvContainer">
+          <General />
+          <Education />
+          <Practical />
+        </div>
+
+        <div className='finalContainer'>
+          
+        </div>
       </div>
     </>
   )
