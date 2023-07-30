@@ -1,6 +1,11 @@
 import { useState } from "react";
 
 export default function Education() {
+
+  const [schoolName, setSchoolName] = useState('')
+  const [studyName, setStudyName] = useState('')
+  const [studyDate, setStudyDate] = useState(null)
+
   return (
     <div>
       <fieldset>

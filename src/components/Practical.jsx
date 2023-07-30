@@ -1,6 +1,13 @@
 import { useState } from "react";
 
 export default function Practical() {
+
+  const [companyName, setCompanyName] = useState('')
+  const [companyPosition, setCompanyPosition] = useState('')
+  const [companyPositionDetails, setCompanyPositionDetails] = useState('')
+  const [companyStartDate, setCompanyStartDate] = useState(null)
+  const [companyEndDate, setCompanyEndDate] = useState(null)
+
   return (
     <div>
       <fieldset>

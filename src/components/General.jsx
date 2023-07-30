@@ -1,6 +1,11 @@
 import { useState } from "react";
 
 export default function General() {
+
+  const [fullName, setFullName] = useState("")
+  const [email, setEmail] = useState("")
+  const [contactNumber, setContactNumber] = useState(null)
+
   return (
     <div>
       <fieldset>

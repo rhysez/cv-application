@@ -5,8 +5,6 @@ import Education from './components/Education'
 import Practical from './components/Practical'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <h1>CV Builder</h1>
@@ -19,7 +17,7 @@ function App() {
         </div>
 
         <div className='finalContainer'>
-          
+
         </div>
       </div>
     </>
