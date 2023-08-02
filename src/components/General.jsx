@@ -1,24 +1,35 @@
 import { useState } from "react";
 
-export default function General() {
+export default function General({title, fullName, email, contactNumber, handleChange}) {
 
-  const [fullName, setFullName] = useState("")
-  const [email, setEmail] = useState("")
-  const [contactNumber, setContactNumber] = useState(null)
+  
 
   return (
     <div>
       <fieldset>
-        <legend>General Information</legend>
+        <legend>{title}</legend>
         <form className="cvSection">
           <label htmlFor="name">Full name</label>
-          <input type="text" id="name" name="name" minLength={4} />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            minLength={4}
+            value = {fullName}
+            onChange={handleChange}
+          />
 
           <label htmlFor="email">Email address</label>
-          <input type="email" id="email" name="email" minLength={10} />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            minLength={10}
+            value = {email}
+          />
 
           <label htmlFor="contactNumber">Contact number</label>
-          <input type="number" id="contactNumber" name="contactNumber" />
+          <input type="number" id="contactNumber" name="contactNumber" value={contactNumber} />
         </form>
 
         <button id="editGeneral">Edit</button>

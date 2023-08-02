@@ -1,18 +1,17 @@
 import { useState } from "react";
 
-export default function Education() {
+export default function Education({title, schoolName}) {
 
-  const [schoolName, setSchoolName] = useState('')
   const [studyName, setStudyName] = useState('')
   const [studyDate, setStudyDate] = useState(null)
 
   return (
     <div>
       <fieldset>
-        <legend>Education</legend>
+        <legend>{title}</legend>
         <form className="cvSection">
           <label htmlFor="schoolName">Name of school</label>
-          <input type="text" id="schoolName" name="schoolName" minLength={1} />
+          <input type="text" id="schoolName" name="schoolName" minLength={1} value={schoolName} />
 
           <label htmlFor="studyName">
             What did you study? Tell us your experience

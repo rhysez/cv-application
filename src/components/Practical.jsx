@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Practical() {
+export default function Practical({title}) {
 
   const [companyName, setCompanyName] = useState('')
   const [companyPosition, setCompanyPosition] = useState('')
@@ -11,7 +11,7 @@ export default function Practical() {
   return (
     <div>
       <fieldset>
-        <legend>Practical Experience</legend>
+        <legend>{title}</legend>
         <form className="cvSection">
           <label htmlFor="companyName">Company name</label>
           <input
