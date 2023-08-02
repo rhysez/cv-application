@@ -1,13 +1,10 @@
 import { useState } from "react";
 
-export default function General({title, fullName, email, contactNumber, handleChange}) {
-
-  
-
+export default function General(props) {
   return (
     <div>
       <fieldset>
-        <legend>{title}</legend>
+        <legend>{props.title}</legend>
         <form className="cvSection">
           <label htmlFor="name">Full name</label>
           <input
@@ -15,8 +12,8 @@ export default function General({title, fullName, email, contactNumber, handleCh
             id="name"
             name="name"
             minLength={4}
-            value = {fullName}
-            onChange={handleChange}
+            value={props.fullName}
+            onChange={props.handleChange}
           />
 
           <label htmlFor="email">Email address</label>
@@ -25,15 +22,26 @@ export default function General({title, fullName, email, contactNumber, handleCh
             id="email"
             name="email"
             minLength={10}
-            value = {email}
+            value={props.email}
+            onChange={props.handleChangeEmail}
           />
 
           <label htmlFor="contactNumber">Contact number</label>
-          <input type="number" id="contactNumber" name="contactNumber" value={contactNumber} />
+          <input
+            type="number"
+            id="contactNumber"
+            name="contactNumber"
+            value={props.contactNumber}
+            onChange={props.handleChangeContactNumber}
+          />
         </form>
 
         <button id="editGeneral">Edit</button>
-        <button type="submit" id="submit">
+        <button
+          type="submit"
+          id="submitGeneral"
+          onSubmit={props.handleSubmitGeneral}
+        >
           Done
         </button>
       </fieldset>

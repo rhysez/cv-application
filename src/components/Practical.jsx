@@ -1,17 +1,10 @@
 import { useState } from "react";
 
-export default function Practical({title}) {
-
-  const [companyName, setCompanyName] = useState('')
-  const [companyPosition, setCompanyPosition] = useState('')
-  const [companyPositionDetails, setCompanyPositionDetails] = useState('')
-  const [companyStartDate, setCompanyStartDate] = useState(null)
-  const [companyEndDate, setCompanyEndDate] = useState(null)
-
+export default function Practical(props) {
   return (
     <div>
       <fieldset>
-        <legend>{title}</legend>
+        <legend>{props.title}</legend>
         <form className="cvSection">
           <label htmlFor="companyName">Company name</label>
           <input
@@ -19,6 +12,8 @@ export default function Practical({title}) {
             id="companyName"
             name="companyName"
             minLength={4}
+            value={props.companyName}
+            onChange={props.handleChangeCompanyName}
           />
 
           <label htmlFor="companyPosition">Position held</label>
@@ -27,6 +22,8 @@ export default function Practical({title}) {
             id="companyPosition"
             name="companyPosition"
             minLength={10}
+            value={props.companyPosition}
+            onChange={props.handleChangeCompanyPosition}
           />
 
           <label htmlFor="companyPositionDetails">
@@ -38,18 +35,32 @@ export default function Practical({title}) {
             cols="50"
             rows="10"
             placeholder="Please provide a semi-detailed overview of your responsibilities at this job."
+            value={props.companyPositionDetails}
+            onChange={props.handleChangeCompanyPositionDetails}
           ></textarea>
 
           <label htmlFor="companyStartDate">Start date</label>
-          <input type="date" id="companyStartDate" name="companyStartDate" />
+          <input
+            type="date"
+            id="companyStartDate"
+            name="companyStartDate"
+            value={props.companyStartDate}
+            onChange={props.handleChangeCompanyStartDate}
+          />
 
           <label htmlFor="companyEndDate">End date</label>
-          <input type="date" id="companyEndDate" name="companyEndDate" />
+          <input
+            type="date"
+            id="companyEndDate"
+            name="companyEndDate"
+            value={props.companyEndDate}
+            onChange={props.handleChangeCompanyEndDate}
+          />
         </form>
 
         <button id="addPractical">Add</button>
         <button id="editGeneral">Edit</button>
-        <button type="submit" id="submit">
+        <button type="submit" id="submitPractical">
           Done
         </button>
       </fieldset>

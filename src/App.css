@@ -7,11 +7,15 @@
 .pageContainer {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
 }
 
 .cvContainer {
   display: flex;
   flex-direction: column;
+  border: solid white 1px;
+  border-radius: 10px;
+  padding: 1rem;
 }
 
 .cvSection {
@@ -46,4 +50,24 @@ legend {
 
 #studyName, #companyPositionDetails {
   width: 60%;
+}
+
+.final {
+  display: flex;
+  flex-direction: column;
+  border: solid rgb(136, 253, 123) 1px;
+  border-radius: 10px;
+  padding: 1rem;
+  align-items: center;
+  width: 40vw;
+}
+
+.finalGeneral,
+.finalEducation,
+.finalPractical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
 }
