@@ -1,14 +1,21 @@
-import { useState } from "react";
 
 export default function Final(props) {
-  const finalStyles = {
-    display: props.display,
+  const finalStylesGeneral = {
+    display: props.displayGeneral,
   };
+
+  const finalStylesEducation = {
+    display: props.displayEducation
+  }
+
+  const finalStylesPractical = {
+    display: props.displayPractical
+  }
 
   return (
     <div className="final">
       <h2>Final CV Version</h2>
-      <div className="finalGeneral" style={finalStyles}>
+      <div className="finalGeneral" style={finalStylesGeneral}>
         <label htmlFor="finalFullName">Full name</label>
         <input
           type="text"
@@ -37,7 +44,7 @@ export default function Final(props) {
         />
       </div>
 
-      <div className="finalEducation">
+      <div className="finalEducation" style={finalStylesEducation}>
         <label htmlFor="finalSchoolName">Name of school</label>
         <input
           type="text"
@@ -68,7 +75,7 @@ export default function Final(props) {
         />
       </div>
 
-      <div className="finalPractical">
+      <div className="finalPractical" style={finalStylesPractical}>
         <label htmlFor="companyName">Company name</label>
         <input
           type="text"

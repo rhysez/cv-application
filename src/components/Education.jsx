@@ -40,7 +40,7 @@ export default function Education(props) {
         </form>
         <button id="addSchool">Add</button>
         <button id="editEducation">Edit</button>
-        <button type="submit" id="submitEducation">
+        <button type="submit" id="submitEducation" onClick={props.handleSubmitEducation}>
           Done
         </button>
       </fieldset>

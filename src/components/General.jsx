@@ -40,7 +40,7 @@ export default function General(props) {
         <button
           type="submit"
           id="submitGeneral"
-          onSubmit={props.handleSubmitGeneral}
+          onClick={props.handleSubmitGeneral}
         >
           Done
         </button>

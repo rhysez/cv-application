@@ -14,12 +14,14 @@ function App() {
   const [schoolName, setSchoolName] = useState("");
   const [studyName, setStudyName] = useState("");
   const [studyDate, setStudyDate] = useState("");
+  const [educationVisible, setEducationVisible] = useState("none")
 
   const [companyName, setCompanyName] = useState("");
   const [companyPosition, setCompanyPosition] = useState("");
   const [companyPositionDetails, setCompanyPositionDetails] = useState("");
   const [companyStartDate, setCompanyStartDate] = useState("");
   const [companyEndDate, setCompanyEndDate] = useState("");
+  const [practicalVisible, setPracticalVisible] = useState("none")
 
   function handleChangeFullName(e) {
     setFullName(e.target.value);
@@ -51,6 +53,10 @@ function App() {
     setStudyDate(e.target.value);
   }
 
+  function handleSubmitEducation() {
+    setEducationVisible("flex")
+  }
+
    // ----- //
 
    function handleChangeCompanyName(e) {
@@ -72,6 +78,10 @@ function App() {
    function handleChangeCompanyEndDate(e) {
     setCompanyEndDate(e.target.value)
    }
+
+   function handleSubmitPractical() {
+    setPracticalVisible("flex")
+  }
 
   return (
     <>
@@ -95,6 +105,7 @@ function App() {
             handleChangeSchoolName={handleChangeSchoolName}
             handleChangeStudyName={handleChangeStudyName}
             handleChangeStudyDate={handleChangeStudyDate}
+            handleSubmitEducation={handleSubmitEducation}
           />
           <Practical 
             title="Practical Experience" 
@@ -108,6 +119,7 @@ function App() {
             handleChangeCompanyPositionDetails={handleChangeCompanyPositionDetails}
             handleChangeCompanyStartDate={handleChangeCompanyStartDate}
             handleChangeCompanyEndDate={handleChangeCompanyEndDate}
+            handleSubmitPractical={handleSubmitPractical}
           />
         </div>
 
@@ -124,6 +136,9 @@ function App() {
             companyPositionDetails={companyPositionDetails}
             companyStartDate={companyStartDate}
             companyEndDate={companyEndDate}
+            displayGeneral={generalVisible}
+            displayEducation={educationVisible}
+            displayPractical={practicalVisible}
           />
         </div>
       </div>

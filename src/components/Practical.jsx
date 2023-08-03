@@ -60,7 +60,7 @@ export default function Practical(props) {
 
         <button id="addPractical">Add</button>
         <button id="editGeneral">Edit</button>
-        <button type="submit" id="submitPractical">
+        <button type="submit" id="submitPractical" onClick={props.handleSubmitPractical}>
           Done
         </button>
       </fieldset>

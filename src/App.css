@@ -60,10 +60,25 @@ legend {
   padding: 1rem;
   align-items: center;
   width: 40vw;
+  background-color: rgb(136, 253, 123, 0.05);
 }
 
-.finalGeneral,
-.finalEducation,
+.finalGeneral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.finalEducation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
 .finalPractical {
   display: flex;
   flex-direction: column;
