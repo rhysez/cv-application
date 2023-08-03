@@ -14,7 +14,7 @@ export default function Final(props) {
 
   return (
     <div className="final">
-      <h2>Final CV Version</h2>
+      <h1>Final CV Template</h1>
       <div className="finalGeneral" style={finalStylesGeneral}>
         <label htmlFor="finalFullName">Full name</label>
         <input
@@ -23,6 +23,7 @@ export default function Final(props) {
           id="finalFullName"
           value={props.fullName}
           readOnly={true}
+          className="finalInput"
         />
 
         <label htmlFor="finalEmail">Email address</label>
@@ -32,6 +33,7 @@ export default function Final(props) {
           id="finalEmail"
           value={props.email}
           readOnly={true}
+          className="finalInput"
         />
 
         <label htmlFor="finalContactNumber">Contact number</label>
@@ -41,6 +43,7 @@ export default function Final(props) {
           id="finalContactNumber"
           value={props.contactNumber}
           readOnly={true}
+          className="finalInput"
         />
       </div>
 
@@ -52,6 +55,7 @@ export default function Final(props) {
           id="finalSchoolName"
           value={props.schoolName}
           readOnly={true}
+          className="finalInput"
         />
         <label htmlFor="studyName">
           What did you study? Tell us your experience
@@ -64,6 +68,7 @@ export default function Final(props) {
           placeholder="Please give a semi-detailed overview of what you studied and what qualifications you gained."
           value={props.studyName}
           readOnly={true}
+          className="finalInput"
         ></textarea>
         <label htmlFor="studyDate">Date of study</label>
         <input
@@ -72,6 +77,7 @@ export default function Final(props) {
           name="studyDate"
           value={props.studyDate}
           readOnly={true}
+          className="finalInput"
         />
       </div>
 
@@ -84,6 +90,7 @@ export default function Final(props) {
           minLength={4}
           value={props.companyName}
           readOnly={true}
+          className="finalInput"
         />
 
         <label htmlFor="companyPosition">Position held</label>
@@ -94,6 +101,7 @@ export default function Final(props) {
           minLength={10}
           value={props.companyPosition}
           readOnly={true}
+          className="finalInput"
         />
 
         <label htmlFor="companyPositionDetails">
@@ -107,6 +115,7 @@ export default function Final(props) {
           placeholder="Please provide a semi-detailed overview of your responsibilities at this job."
           value={props.companyPositionDetails}
           readOnly={true}
+          className="finalInput"
         ></textarea>
 
         <label htmlFor="companyStartDate">Start date</label>
@@ -116,6 +125,7 @@ export default function Final(props) {
           name="companyStartDate"
           value={props.companyStartDate}
           readOnly={true}
+          className="finalInput"
         />
 
         <label htmlFor="companyEndDate">End date</label>
@@ -125,6 +135,7 @@ export default function Final(props) {
           name="companyEndDate"
           value={props.companyEndDate}
           readOnly={true}
+          className="finalInput"
         />
       </div>
     </div>

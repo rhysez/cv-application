@@ -55,12 +55,12 @@ legend {
 .final {
   display: flex;
   flex-direction: column;
-  border: solid rgb(136, 253, 123) 1px;
   border-radius: 10px;
   padding: 1rem;
   align-items: center;
   width: 40vw;
-  background-color: rgb(136, 253, 123, 0.05);
+  background-color: white;
+  color: #3c3c3c;
 }
 
 .finalGeneral {
@@ -69,6 +69,7 @@ legend {
   align-items: center;
   width: 100%;
   margin-bottom: 2rem;
+  color: #242424;
 }
 
 .finalEducation {
@@ -85,4 +86,12 @@ legend {
   align-items: center;
   width: 100%;
   margin-bottom: 2rem;
+}
+
+.finalInput {
+  background-color: white;
+  color: #242424;
+  border: 1px solid #242424;
+  border-radius: 5px;
+  padding: 0.25rem;
 }

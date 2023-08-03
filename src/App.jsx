@@ -85,7 +85,7 @@ function App() {
 
   return (
     <>
-      <h1>CV Builder</h1>
+      <h1>Build a CV Template</h1>
 
       <div className="pageContainer">
         <div className="cvContainer">

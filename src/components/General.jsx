@@ -35,8 +35,6 @@ export default function General(props) {
             onChange={props.handleChangeContactNumber}
           />
         </form>
-
-        <button id="editGeneral">Edit</button>
         <button
           type="submit"
           id="submitGeneral"

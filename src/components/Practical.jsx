@@ -58,8 +58,6 @@ export default function Practical(props) {
           />
         </form>
 
-        <button id="addPractical">Add</button>
-        <button id="editGeneral">Edit</button>
         <button type="submit" id="submitPractical" onClick={props.handleSubmitPractical}>
           Done
         </button>
